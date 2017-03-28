@@ -47,7 +47,6 @@
         <source-file src="platforms/android/libs/armeabi/liblbs.so" target-dir="libs/armeabi"/>
         <source-file src="platforms/android/libs/armeabi/liblbs.so" target-dir="libs/x86"/>
         <source-file src="platforms/android/libs/armeabi/liblbs.so" target-dir="libs/armeabi-v7a"/>
-        <source-file src="platforms/android/libs/armeabi/liblbs.so" target-dir="libs/armeabi-v7a"/>
     </platform>
 
     <info>
