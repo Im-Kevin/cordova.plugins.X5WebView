@@ -15,7 +15,7 @@ $ cordova build android
 * 找到platforms\android\src\ + 包名 + \MainActivity.java
 将
 
-```
+```java
         @Override
         public void onCreate(Bundle savedInstanceState)
         {
@@ -34,7 +34,7 @@ $ cordova build android
 
 修改为
 
-```
+```java
      @Override
       public void onCreate(Bundle savedInstanceState)
         {
@@ -88,7 +88,7 @@ $ cordova build android
 ```
 
 * 找到platforms\android\build.gradle里面的
-```
+```gradle
 android {
     ...
     defaultConfig {
@@ -105,6 +105,8 @@ android {
 
         }
         ...
+   }
+   ...
 }
 ```
 
