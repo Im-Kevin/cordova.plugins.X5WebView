@@ -1,16 +1,16 @@
 {
-  "name": "cordova-plugin-x5engine-webview",
-  "version": "2.0.0",
-  "description": "Changes the default WebView to QQ X5 WebView",
+  "name": "cordova.plugins.X5WebView",
+  "version": "1.0.0",
+  "description": "Changes the default WebView to TBS X5 WebView",
   "cordova": {
-    "id": "cordova-plugin-x5engine-webview",
+    "id": "cordova.plugins.X5WebView",
     "platforms": [
       "android"
     ]
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/offbye/cordova-plugin-x5engine-webview.git"
+    "url": "https://github.com/Im-Kevin/cordova.plugins.X5WebView.git"
   },
   "keywords": [
     "cordova",
@@ -19,7 +19,8 @@
     "webview",
     "engine",
     "ecosystem:cordova",
-    "cordova-android"
+    "cordova-android",
+    "TBS"
   ],
   "engines": [{
     "name": "cordova-android",
@@ -31,7 +32,7 @@
   "author": "",
   "license": "Apache 2.0",
   "bugs": {
-    "url": "https://github.com/offbye/cordova-plugin-x5engine-webview"
+    "url": "https://github.com/Im-Kevin/cordova.plugins.X5WebView"
   },
-  "homepage": "https://github.com/offbye/cordova-plugin-x5engine-webview"
+  "homepage": "https://github.com/Im-Kevin/cordova.plugins.X5WebView"
 }
