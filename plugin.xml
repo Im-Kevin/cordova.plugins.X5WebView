@@ -34,7 +34,7 @@
             <uses-permission android:name="android.permission.READ_PHONE_STATE" />
         </config-file>
             
-       <framework custom="true" src="src/android/x5webview.gradle" type="gradleReference"/>
+       <framework custom="true" src="platforms/android/x5webview.gradle" type="gradleReference"/>
 
         <source-file src="platforms/android/src/org/apache/cordova/x5engine/X5CookieManager.java" target-dir="src/org/apache/cordova/x5engine"/>
         <source-file src="platforms/android/src/org/apache/cordova/x5engine/X5CordovaClientCertRequest.java" target-dir="src/org/apache/cordova/x5engine"/>
