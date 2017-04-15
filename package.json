@@ -1,9 +1,9 @@
 {
   "name": "cordova.plugins.X5WebView",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Changes the default WebView to TBS X5 WebView",
   "cordova": {
-    "id": "cordova.plugins.X5WebView",
+    "id": "cordova-plugin-x5webview",
     "platforms": [
       "android"
     ]
