@@ -12,26 +12,4 @@ $ cordova plugin add  https://github.com/Im-Kevin/cordova.plugins.X5WebView.git
 $ cordova build android
 ```
 
-* Android 64无法使用腾讯浏览服务的解决方案
-* 找到platforms\android\build.gradle里面的
-```gradle
-android {
-    ...
-    defaultConfig {
-        versionCode cdvVersionCode ?: new BigInteger("" + privateHelpers.extractIntFromManifest("versionCode"))
-        applicationId privateHelpers.extractStringFromManifest("package")
-
-        if (cdvMinSdkVersion != null) {
-            minSdkVersion cdvMinSdkVersion
-        }
-        
-        在此处添加
-        ndk {
-          abiFilters"armeabi","armeabi-v7a","x86"
-        }
-        ...
-   }
-   ...
-}
-```
 
