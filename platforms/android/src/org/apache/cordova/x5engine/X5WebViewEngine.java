@@ -28,6 +28,8 @@ import android.content.IntentFilter;
 import android.content.pm.ApplicationInfo;
 import android.os.Build;
 import android.view.View;
+
+import com.tencent.smtt.sdk.QbSdk;
 import com.tencent.smtt.sdk.WebSettings;
 import com.tencent.smtt.sdk.WebSettings.LayoutAlgorithm;
 import com.tencent.smtt.sdk.WebView;
@@ -58,6 +60,7 @@ import java.lang.reflect.Method;
  */
 public class X5WebViewEngine implements CordovaWebViewEngine {
     public static final String TAG = "X5WebViewEngine";
+    public static boolean isInit = false;
 
     protected final X5WebView webView;
     protected final X5CookieManager cookieManager;
@@ -73,7 +76,25 @@ public class X5WebViewEngine implements CordovaWebViewEngine {
 
     /** Used when created via reflection. */
     public X5WebViewEngine(Context context, CordovaPreferences preferences) {
-        this(new X5WebView(context), preferences);
+      if(!isInit)
+      {
+        QbSdk.PreInitCallback cb = new QbSdk.PreInitCallback() {
+
+          @Override
+          public void onViewInitFinished(boolean arg0) {
+          }
+
+          @Override
+          public void onCoreInitFinished() {
+            isInit = true;
+          }
+        };
+        QbSdk.initX5Environment(context,  cb);
+      }
+
+      this.preferences = preferences;
+      this.webView = new X5WebView(context);
+      cookieManager = new X5CookieManager(webView);
     }
 
     public X5WebViewEngine(X5WebView webView) {
