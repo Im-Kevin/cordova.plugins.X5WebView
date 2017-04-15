@@ -2,7 +2,7 @@
 
 cdvPluginPostBuildExtras.add({
 
-    android.defaultConfig. {
-          abiFilters"armeabi","armeabi-v7a","x86"
+    android.defaultConfig.ndk {
+          abiFilters "armeabi","armeabi-v7a","x86"
     }
 });
