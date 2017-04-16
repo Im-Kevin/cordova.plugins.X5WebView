@@ -12,4 +12,10 @@ $ cordova plugin add cordova.plugins.x5webview
 $ cordova build android
 ```
 
+无需其他步骤,添加完毕就已经使用了腾讯浏览服务
+
+验证方式可以调用window.navigator.userAgent
+返回结果
+![alt text](/result.jpg "返回结果")
+
 
