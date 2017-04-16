@@ -17,8 +17,6 @@ $ cordova build android
 
 验证方式可以调用window.navigator.userAgent
 
-返回结果
+返回如下结果即代表成功
 
-![alt text](/result.jpg "返回结果")
-
-
+![alt text](/result.png "返回结果")
