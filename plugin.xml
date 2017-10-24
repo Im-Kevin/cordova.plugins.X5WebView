@@ -3,7 +3,7 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
         xmlns:android="http://schemas.android.com/apk/res/android"
         id="cordova-plugin-x5webview"
-        version="1.0.2">
+        version="1.0.3">
 
     <name>X5 WebView</name>
     <description>Changes the default WebView to x5engine</description>
@@ -45,7 +45,7 @@
         <source-file src="platforms/android/src/org/apache/cordova/x5engine/X5WebViewClient.java" target-dir="src/org/apache/cordova/x5engine"/>
         <source-file src="platforms/android/src/org/apache/cordova/x5engine/X5WebViewEngine.java" target-dir="src/org/apache/cordova/x5engine"/>
 
-        <source-file src="platforms/android/libs/tbs_sdk_thirdapp_v3.1.0.1034_43100_sharewithdownload_obfs_20170301_182143.jar" target-dir="libs"/>
+        <source-file src="platforms/android/libs/tbs_sdk_thirdapp_v3.5.0.1004_43500_sharewithdownload_withoutGame_obfs_20170801_113025.jar" target-dir="libs"/>
         <source-file src="platforms/android/libs/armeabi/liblbs.so" target-dir="libs/armeabi"/>
         <source-file src="platforms/android/libs/armeabi/liblbs.so" target-dir="libs/x86"/>
         <source-file src="platforms/android/libs/armeabi/liblbs.so" target-dir="libs/armeabi-v7a"/>
